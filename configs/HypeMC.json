@@ -9,7 +9,7 @@
       "Attack on": "Legit",
       "Pre Range": 1.2,
       "Randomize pre Range": true,
-      "Range": 3.5,
+      "Range": 3.2,
       "Randomize range": true,
       "Max APS": 16.0,
       "Min APS": 8.0,
@@ -21,7 +21,7 @@
       "Block chance": 25.0,
       "Min unblock ticks": 7.0,
       "Max unblock ticks": 13.0,
-      "Fake block": false,
+      "Fake block": true,
       "BestHitVec": true,
       "Ignore walls": false,
       "Legit rotations": false,
@@ -46,16 +46,27 @@
     "Toggled": false,
     "Setting": {
       "Mode": "Intave",
+      "XZVelocity": 0.6,
+      "YVelocity": 55.0,
+      "Jump": false,
+      "Explosion": true,
+      "Push": 4.8,
+      "PushStart": 9.0,
+      "PushEnd": 2.0,
       "ReverseStart": 9.0,
-      "Amount": 100.0
+      "TickZero": 4.0,
+      "TickZeroY": true,
+      "ReverseStrafe": false,
+      "OnGround": false,
+      "HitBug": false
     }
   },
   "BackTrack": {
     "Toggled": true,
     "Setting": {
-      "MaxHitRange": 6.0,
-      "Delay": 218.0,
-      "OnlyWhenNeed": true,
+      "MaxHitRange": 4.4,
+      "Delay": 73.0,
+      "OnlyWhenNeed": false,
       "Esp": true,
       "CancelVelocity": true,
       "CancelKeepAlive": true,
@@ -71,9 +82,9 @@
     "Setting": {}
   },
   "TickBase": {
-    "Toggled": false,
+    "Toggled": true,
     "Setting": {
-      "Ticks": 2.0
+      "Ticks": 1.0
     }
   },
   "AutoClicker": {
@@ -98,9 +109,15 @@
     }
   },
   "NoFall": {
-    "Toggled": true,
+    "Toggled": false,
     "Setting": {
-      "Mode": "IntaveTimer"
+      "Mode": "IntaveTimer",
+      "AimRange": 8.0,
+      "MinFallDist": 14.0,
+      "MinFallDistLegit": 4.0,
+      "YawSpeed": 74.0,
+      "PitchSpeed": 81.0,
+      "Delay": 0.0
     }
   },
   "NoRotate": {
@@ -120,7 +137,7 @@
       "Backup": 1.0,
       "MoveFix": true,
       "AutoJump": false,
-      "NoSwing": true,
+      "NoSwing": false,
       "SilentMode": "None"
     }
   },
@@ -138,7 +155,27 @@
   },
   "Disabler": {
     "Toggled": false,
-    "Setting": {}
+    "Setting": {
+      "PingSpoof": true,
+      "RoyalPixels": false,
+      "MinemenStrafe": false,
+      "UniversoCraft": false,
+      "Spectate": false,
+      "C00PacketKeepAlive": false,
+      "C01PacketPing": false,
+      "C0BPacketEntityAction": false,
+      "PingSpooC13PacketPlayerAbilitiesf": false,
+      "C0FPacketConfirmTransaction": false,
+      "NCPTimerSemi": false,
+      "HAC": false,
+      "NoSprint": false,
+      "BLC-Spoof": false,
+      "AAC5": false,
+      "NoFlag": false,
+      "FrequencyFull": false,
+      "Debug": false,
+      "Delay": 9.0
+    }
   },
   "Range": {
     "Toggled": false,
@@ -151,7 +188,7 @@
     "Setting": {}
   },
   "ChestStealer": {
-    "Toggled": true,
+    "Toggled": false,
     "Setting": {
       "StartDelay": 245.0,
       "Delay": 91.0,
@@ -178,7 +215,7 @@
     }
   },
   "InvCleaner": {
-    "Toggled": true,
+    "Toggled": false,
     "Setting": {
       "Mode": "OpenInv",
       "CleanMode": "Clean",
@@ -187,7 +224,7 @@
       "Delay": 44.0,
       "MinDelay": 127.0,
       "MaxDelay": 459.0,
-      "StartDelay": 391.0,
+      "StartDelay": 991.0,
       "FailClicks": false,
       "FailChance": 1.0,
       "Sort": true
@@ -254,7 +291,11 @@
     "Toggled": false,
     "Setting": {
       "Mode": "Vanilla",
-      "Speed": 2.9
+      "AutoJump": false,
+      "OnGroundPacket": false,
+      "Speed": 2.9,
+      "VerusSpeed": 4.0,
+      "DisableOnWorld": true
     }
   },
   "Step": {
@@ -312,21 +353,6 @@
       "OnlyOnGround": false
     }
   },
-  "TargetESP": {
-    "Toggled": true,
-    "Setting": {
-      "Spiral": false,
-      "Color Mode": "Fade",
-      "Coils": 3.0,
-      "Speed": 4.0,
-      "Height": 1.8,
-      "Width": 1.6,
-      "Sigma": true,
-      "Line": true,
-      "Rainbow": true,
-      "Sigma Hurttime": true
-    }
-  },
   "Friends": {
     "Toggled": true,
     "Setting": {}
@@ -336,5 +362,9 @@
     "Setting": {
       "AlertChat": false
     }
+  },
+  "DiscordRPC": {
+    "Toggled": true,
+    "Setting": {}
   }
 }
