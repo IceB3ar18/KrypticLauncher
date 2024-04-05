@@ -1,21 +1,23 @@
 {
   "KillAura": {
-    "Toggled": true,
+    "Toggled": false,
     "Setting": {
       "Mode": "Single",
       "Switch delay": 400.0,
       "Priority": "Distance",
       "Attack mode": "Click",
       "Attack on": "Legit",
-      "Pre Range": 1.2,
+      "Pre Range": 2.9,
       "Randomize pre Range": true,
-      "Range": 3.2,
+      "Range": 3.0,
       "Randomize range": true,
       "Max APS": 16.0,
       "Min APS": 8.0,
       "Smooth rotations": true,
-      "Calculate Speed": true,
-      "Speed": 90.0,
+      "YawSpeedMin": 136.0,
+      "YawSpeedMax": 180.0,
+      "PitchSpeedMin": 146.0,
+      "PitchSpeedMax": 180.0,
       "Auto. block": false,
       "Block range": 3.0,
       "Block chance": 25.0,
@@ -43,12 +45,12 @@
     }
   },
   "Velocity": {
-    "Toggled": false,
+    "Toggled": true,
     "Setting": {
       "Mode": "Intave",
       "XZVelocity": 0.6,
       "YVelocity": 55.0,
-      "Jump": false,
+      "Jump": true,
       "Explosion": true,
       "Push": 4.8,
       "PushStart": 9.0,
@@ -84,7 +86,8 @@
   "TickBase": {
     "Toggled": true,
     "Setting": {
-      "Ticks": 1.0
+      "Ticks": 2.0,
+      "Stop": false
     }
   },
   "AutoClicker": {
@@ -230,10 +233,6 @@
       "Sort": true
     }
   },
-  "AutoRegister": {
-    "Toggled": true,
-    "Setting": {}
-  },
   "FastPlace": {
     "Toggled": false,
     "Setting": {
@@ -363,7 +362,11 @@
       "AlertChat": false
     }
   },
-  "DiscordRPC": {
+  "Discord": {
+    "Toggled": true,
+    "Setting": {}
+  },
+  "AutoRegister": {
     "Toggled": true,
     "Setting": {}
   }
