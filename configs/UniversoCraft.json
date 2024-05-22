@@ -2,31 +2,27 @@
   "KillAura": {
     "Toggled": true,
     "Setting": {
-      "Mode": "Single",
+      "Mode": "Switch",
       "Switch delay": 300.0,
-      "Priority": "Distance",
+      "Priority": "Health",
       "Attack mode": "Click",
       "Attack on": "Legit",
       "Pre Range": 0.6,
       "Randomize pre Range": true,
       "Range": 3.6,
-      "SmoothRotations": true,
       "CalcRotSpeed": false,
-      "YawSpeedMin": 30.0,
-      "YawSpeedMax": 45.0,
-      "PitchSpeedMin": 22.0,
-      "PitchSpeedMax": 47.0,
-      "BestHitVec": true,
+      "YawSpeedMin": 38.0,
+      "YawSpeedMax": 79.0,
+      "PitchSpeedMin": 37.0,
+      "PitchSpeedMax": 69.0,
       "Inaccuracy": 0.0,
-      "A3Fix": true,
-      "MouseFix": true,
-      "Clamp Yaw": false,
       "Predict": true,
-      "Heuristics": false,
+      "Heuristics": true,
+      "Clamp Yaw": false,
       "Randomize range": true,
-      "Min APS": 328.0,
-      "Max APS": 746.0,
-      "PerfectHit": true,
+      "Min APS": 119.0,
+      "Max APS": 255.0,
+      "PerfectHit": false,
       "Auto. block": false,
       "Block range": 4.0,
       "Block chance": 20.0,
@@ -55,10 +51,10 @@
       "Mode": "Grim",
       "XZVelocity": 0.6,
       "YVelocity": 20.0,
-      "XZIntave": 0.6,
+      "XZIntave": 0.0,
       "Jump": true,
       "Explosion": true,
-      "Push": 6.4,
+      "Push": 1.1,
       "PushStart": 9.0,
       "PushEnd": 2.0,
       "ReverseStart": 9.0,
@@ -72,8 +68,8 @@
   "BackTrack": {
     "Toggled": true,
     "Setting": {
-      "MaxHitRange": 5.8,
-      "Delay": 345.0,
+      "MaxHitRange": 6.0,
+      "Delay": 218.0,
       "OnlyWhenNeed": true,
       "Esp": true,
       "CancelVelocity": true,
@@ -92,10 +88,10 @@
   "TickBase": {
     "Toggled": false,
     "Setting": {
-      "Range": 3.5,
+      "Range": 3.2,
       "Ticks": 1.0,
       "Stop": true,
-      "Mode": "Past"
+      "Mode": "Future"
     }
   },
   "AutoGApple": {
@@ -124,8 +120,8 @@
     "Setting": {
       "YawSpeedMin": 17.0,
       "YawSpeedMax": 30.0,
-      "PitchSpeedMin": 30.0,
-      "PitchSpeedMax": 50.0,
+      "PitchSpeedMin": 16.0,
+      "PitchSpeedMax": 29.0,
       "MoveFix": true,
       "SilentMoveFix": true
     }
@@ -153,26 +149,24 @@
   "Scaffold": {
     "Toggled": false,
     "Setting": {
-      "Mode": "MoonWalk",
-      "YawSpeedMin": 25.0,
-      "YawSpeedMax": 38.0,
-      "PitchSpeedMin": 12.0,
-      "PitchSpeedMax": 27.0,
+      "Mode": "Snap",
+      "YawSpeed": 180.0,
+      "PitchSpeed": 180.0,
       "Backup": 0.0,
       "SpamClick": true,
       "IntaveHit": true,
       "ClickDelay": 200.0,
       "MoveFix": true,
-      "SilentMoveFix": false,
+      "SilentMoveFix": true,
       "SameY": false,
       "Breezly": false,
       "AutoJump": true,
       "Jump Delay": 8.0,
       "NoSwing": false,
       "Predict": true,
-      "Sprint": false,
+      "Sprint": true,
       "Tower": "None",
-      "TowerMove": false,
+      "TowerMove": true,
       "SneakDelay": 2000.0,
       "SilentMode": "Spoof",
       "ESP": true,
@@ -326,11 +320,11 @@
   "Flight": {
     "Toggled": false,
     "Setting": {
-      "Mode": "Verus2",
+      "Mode": "Vanilla",
       "AutoJump": true,
       "OnGroundPacket": true,
-      "Speed": 4.5,
-      "VerusSpeed": 1.3,
+      "Speed": 1.0,
+      "VerusSpeed": 1.0,
       "DisableOnWorld": false
     }
   },
@@ -347,13 +341,13 @@
     }
   },
   "NoSlow": {
-    "Toggled": false,
+    "Toggled": true,
     "Setting": {
       "StartSlow": false,
       "Slowdown": true,
       "Sprint": true,
       "Switch": false,
-      "Toggle": true,
+      "Toggle": false,
       "Bug": false,
       "Timer": false,
       "Forward": 1.0,
@@ -362,7 +356,7 @@
     }
   },
   "No Jump Delay": {
-    "Toggled": false,
+    "Toggled": true,
     "Setting": {
       "KillAuraDisable": false
     }
