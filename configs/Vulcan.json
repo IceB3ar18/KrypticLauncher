@@ -2,41 +2,66 @@
   "KillAura": {
     "Toggled": true,
     "Setting": {
-      "Mode": "Single",
-      "Switch delay": 300.0,
+      "Mode": "Switch",
+      "Switch delay": 200.0,
       "Priority": "Distance",
       "Attack mode": "Click",
       "Attack on": "Legit",
       "Pre Range": 0.6,
       "Randomize pre Range": true,
-      "Range": 3.6,
-      "CalcRotSpeed": true,
-      "YawSpeedMin": 35.0,
-      "YawSpeedMax": 51.0,
-      "PitchSpeedMin": 22.0,
-      "PitchSpeedMax": 47.0,
-      "Inaccuracy": 76.0,
+      "Range": 5.3,
+      "SmoothRotations": false,
+      "CalcRotSpeed": false,
+      "BestHitVec": true,
+      "Inaccuracy": 29.0,
+      "MouseFix": true,
+      "A3Fix": true,
       "Predict": true,
       "Heuristics": false,
-      "Clamp Yaw": false,
+      "PointSpeed": 35.0,
+      "BumpSmoothing": 10.0,
+      "SmoothingAmount": 9.9,
+      "GaussianDevision": 99.5,
+      "SineFrequency": 99.5,
       "Randomize range": true,
-      "Min APS": 119.0,
-      "Max APS": 255.0,
+      "AdvancedClicking": true,
+      "MinCPS": 39.800000000000004,
+      "MaxCPS": 39.800000000000004,
+      "CpsCap": 22.1,
+      "CpsCapRMin": 18.7,
+      "CpsCapRMax": 23.8,
+      "Spikes": true,
+      "SpikesDelayMin": 6350.400000000001,
+      "SpikesDelayMax": 8550.1,
+      "SpikesDurationMin": 5050.5,
+      "SpikesDurationMax": 7150.3,
+      "MinSCPS": 14.600000000000001,
+      "MaxSCPS": 18.6,
+      "Drops": true,
+      "DropsDelayMin": 6950.3,
+      "DropsDelayMax": 8500.0,
+      "DropsDurationMin": 2000.0,
+      "DropsDurationMax": 3000.0,
+      "MinDCPS": 3.9000000000000004,
+      "MaxDCPS": 7.800000000000001,
       "PerfectHit": true,
+      "PHChance": 100.0,
       "Auto. block": false,
-      "Block range": 4.0,
-      "Block chance": 20.0,
+      "Block range": 3.0,
+      "Block chance": 25.0,
       "Min unblock ticks": 8.0,
       "Max unblock ticks": 13.0,
       "Fake block": false,
       "Pre swing": true,
-      "MoveFix": true,
-      "SilentMoveFix": true,
+      "MoveFix": false,
+      "SilentMoveFix": false,
       "VelocityFix": true,
       "Keep sprint": false,
       "Disable on death": true,
       "Attack death": false,
-      "Players": true
+      "Players": true,
+      "LockView": false,
+      "LookESP": true
     }
   },
   "Criticals": {
@@ -46,11 +71,12 @@
     }
   },
   "Velocity": {
-    "Toggled": false,
+    "Toggled": true,
     "Setting": {
-      "Mode": "Intave",
-      "XZVelocity": 0.6,
-      "YVelocity": 20.0,
+      "Mode": "BuzzReverse",
+      "XZVelocity": 53.0,
+      "YVelocity": 100.0,
+      "XZIntave": 0.6,
       "Jump": true,
       "Explosion": true,
       "Push": 6.4,
@@ -67,10 +93,10 @@
   "BackTrack": {
     "Toggled": true,
     "Setting": {
-      "MaxHitRange": 5.9,
-      "Delay": 418.0,
+      "MaxHitRange": 5.8,
+      "Delay": 564.0,
       "OnlyWhenNeed": true,
-      "Esp": true,
+      "Esp": false,
       "CancelVelocity": true,
       "CancelKeepAlive": true,
       "CancelTimeUpdate": true
@@ -81,15 +107,14 @@
     "Setting": {}
   },
   "WTap": {
-    "Toggled": true,
+    "Toggled": false,
     "Setting": {}
   },
   "TickBase": {
-    "Toggled": false,
+    "Toggled": true,
     "Setting": {
-      "Range": 3.2,
+      "Range": 4.0,
       "Ticks": 1.0,
-      "Stop": true,
       "Mode": "Past"
     }
   },
@@ -99,6 +124,13 @@
       "Health": 15.0,
       "Delay": 650.0,
       "Item spoof": true
+    }
+  },
+  "AutoRod": {
+    "Toggled": false,
+    "Setting": {
+      "NextRod": 4025.0,
+      "ResetSlot": true
     }
   },
   "AutoClicker": {
@@ -117,13 +149,9 @@
   "NoFall": {
     "Toggled": false,
     "Setting": {
-      "Mode": "SpoofGround",
-      "AimRange": 5.0,
+      "Mode": "Vulcan",
       "MinFallDist": 2.0,
-      "MinFallDistLegit": 6.0,
-      "YawSpeed": 40.0,
-      "PitchSpeed": 40.0,
-      "Delay": 110.0
+      "AimRange": 8.0
     }
   },
   "NoRotate": {
@@ -137,31 +165,33 @@
   "Scaffold": {
     "Toggled": false,
     "Setting": {
-      "Rotate": "Normal",
-      "YawSpeed": 8.0,
-      "PitchSpeed": 1.0,
+      "Mode": "Normal",
+      "MouseFix": false,
+      "A3Fix": false,
       "Backup": 0.0,
       "SpamClick": true,
       "IntaveHit": true,
       "ClickDelay": 200.0,
-      "MoveFix": true,
-      "SameY": true,
+      "MoveFix": false,
+      "SilentMoveFix": true,
+      "SameY": false,
       "Breezly": false,
       "AutoJump": true,
       "Jump Delay": 8.0,
       "NoSwing": true,
       "Predict": true,
-      "Sprint": false,
-      "Tower": "None",
+      "BlockSafe": true,
+      "Sprint": true,
+      "LegitSneak": false,
+      "SaveSneak": true,
+      "Tower": "FastJump",
       "TowerMove": true,
-      "StartSneak": false,
       "SilentMode": "Spoof",
-      "ESP": false,
       "Block Count": "Augustus"
     }
   },
   "Disabler": {
-    "Toggled": false,
+    "Toggled": true,
     "Setting": {
       "PingSpoof": false,
       "RoyalPixels": false,
@@ -175,7 +205,7 @@
       "C0FPacketConfirmTransaction": false,
       "NCPTimerSemi": false,
       "HAC": false,
-      "NoSprint": false,
+      "NoSprint": true,
       "BLC-Spoof": false,
       "AAC5": false,
       "NoFlag": false,
@@ -185,33 +215,24 @@
     }
   },
   "Range": {
-    "Toggled": false,
+    "Toggled": true,
     "Setting": {
-      "Range": 3.0
+      "Range": 3.5
     }
   },
   "BetterHits": {
-    "Toggled": false,
+    "Toggled": true,
     "Setting": {}
   },
   "ChestStealer": {
     "Toggled": true,
     "Setting": {
-      "ClickMode": "Interval",
-      "MinDelay": 0.0,
-      "MaxDelay": 0.0,
-      "MinInterval": 2.0,
-      "MaxInterval": 6.0,
-      "Delay": 100.0,
-      "Random Strength": 47.0,
-      "StartDelay": 255.0,
-      "Random": false,
-      "FailClicks": true,
-      "FailChance": 4.0,
+      "Sorting": "Nearest",
+      "Mode": "MouseSimulation",
+      "Click Empty Slot Chance": 1.0,
+      "FreeLook": true,
       "Intelligent": true,
-      "AutoClose": true,
-      "CloseDelay": 391.0,
-      "SpamClick": false
+      "Close": true
     }
   },
   "AutoArmor": {
@@ -219,7 +240,6 @@
     "Setting": {
       "Mode": "OpenInv",
       "StartDelay": 200.0,
-      "Delay": 90.0,
       "Hotbar": true,
       "GommeQSG": true,
       "NoMove": false,
@@ -233,14 +253,7 @@
       "Mode": "OpenInv",
       "CleanMode": "Clean",
       "NoMove": true,
-      "ClickMode": "Interval",
-      "MinDelay": 0.0,
-      "MaxDelay": 282.0,
-      "MinInterval": 8.0,
-      "MaxInterval": 10.0,
-      "Delay": 182.0,
-      "StartDelay": 364.0,
-      "Random Strength": 55.0,
+      "ClickMode": "Normal",
       "FailClicks": true,
       "FailChance": 4.0,
       "Sort": true
@@ -261,6 +274,7 @@
       "ThroughWall": true,
       "Instant": true,
       "MoveFix": true,
+      "SilentMoveFix": true,
       "FriendMyBlock": true,
       "CustomID": 26.0,
       "YawSpeed": 180.0,
@@ -296,29 +310,29 @@
   "Speed": {
     "Toggled": false,
     "Setting": {
-      "Mode": "TeleportAbuse",
-      "Speed": 10.0,
-      "Height": 0.2,
+      "Mode": "GroundStrafe",
+      "Speed": 2.6,
+      "Height": 0.42,
       "DMGSpeed": 1.0,
       "DamageBoost": false,
-      "Strafe": false
+      "Strafe": true
     }
   },
   "Flight": {
     "Toggled": false,
     "Setting": {
-      "Mode": "Vanilla",
+      "Mode": "VulcanGlide",
       "AutoJump": true,
       "OnGroundPacket": true,
-      "Speed": 1.0,
-      "VerusSpeed": 1.0,
+      "Speed": 4.5,
+      "VerusSpeed": 1.3,
       "DisableOnWorld": false
     }
   },
   "Step": {
     "Toggled": false,
     "Setting": {
-      "Height": 1.0
+      "Height": 3.0
     }
   },
   "InvMove": {
@@ -328,13 +342,13 @@
     }
   },
   "NoSlow": {
-    "Toggled": false,
+    "Toggled": true,
     "Setting": {
       "StartSlow": false,
       "Slowdown": true,
       "Sprint": true,
       "Switch": false,
-      "Toggle": true,
+      "Toggle": false,
       "Bug": false,
       "Timer": false,
       "Forward": 1.0,

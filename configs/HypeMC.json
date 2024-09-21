@@ -7,32 +7,31 @@
       "Priority": "Distance",
       "Attack mode": "Click",
       "Attack on": "Legit",
-      "Pre Range": 0.6,
+      "Pre Range": 1.1,
       "Randomize pre Range": true,
-      "Range": 3.6,
+      "Range": 3.5,
       "SmoothRotations": true,
       "CalcRotSpeed": false,
-      "YawSpeedMin": 30.0,
-      "YawSpeedMax": 45.0,
-      "PitchSpeedMin": 22.0,
-      "PitchSpeedMax": 47.0,
       "BestHitVec": true,
       "Inaccuracy": 0.0,
       "A3Fix": true,
       "MouseFix": true,
-      "Clamp Yaw": false,
-      "Predict": true,
-      "Heuristics": false,
+      "Predict": false,
+      "Heuristics": true,
+      "DivisionXZ": 84.0,
+      "DivisionY": 14.0,
+      "Points": 2.0,
       "Randomize range": true,
-      "Min APS": 328.0,
-      "Max APS": 746.0,
+      "Min APS": 815.0,
+      "Max APS": 965.0,
       "PerfectHit": true,
+      "PHChance": 78.0,
       "Auto. block": false,
       "Block range": 4.0,
       "Block chance": 20.0,
       "Min unblock ticks": 8.0,
       "Max unblock ticks": 13.0,
-      "Fake block": false,
+      "Fake block": true,
       "Pre swing": true,
       "MoveFix": true,
       "SilentMoveFix": true,
@@ -40,7 +39,8 @@
       "Keep sprint": false,
       "Disable on death": true,
       "Attack death": false,
-      "Players": true
+      "Players": true,
+      "LockView": false
     }
   },
   "Criticals": {
@@ -52,7 +52,7 @@
   "Velocity": {
     "Toggled": false,
     "Setting": {
-      "Mode": "Grim",
+      "Mode": "Legit",
       "XZVelocity": 0.6,
       "YVelocity": 20.0,
       "XZIntave": 0.6,
@@ -72,9 +72,9 @@
   "BackTrack": {
     "Toggled": true,
     "Setting": {
-      "MaxHitRange": 5.8,
-      "Delay": 345.0,
-      "OnlyWhenNeed": true,
+      "MaxHitRange": 5.6000000000000005,
+      "Delay": 80.0,
+      "OnlyWhenNeed": false,
       "Esp": true,
       "CancelVelocity": true,
       "CancelKeepAlive": true,
@@ -94,7 +94,6 @@
     "Setting": {
       "Range": 3.5,
       "Ticks": 1.0,
-      "Stop": true,
       "Mode": "Past"
     }
   },
@@ -122,10 +121,6 @@
   "RotationHandler": {
     "Toggled": true,
     "Setting": {
-      "YawSpeedMin": 17.0,
-      "YawSpeedMax": 30.0,
-      "PitchSpeedMin": 30.0,
-      "PitchSpeedMax": 50.0,
       "MoveFix": true,
       "SilentMoveFix": true
     }
@@ -134,11 +129,7 @@
     "Toggled": false,
     "Setting": {
       "Mode": "SpoofGround",
-      "AimRange": 5.0,
       "MinFallDist": 2.0,
-      "MinFallDistLegit": 6.0,
-      "YawSpeed": 40.0,
-      "PitchSpeed": 40.0,
       "Delay": 110.0
     }
   },
@@ -153,29 +144,24 @@
   "Scaffold": {
     "Toggled": false,
     "Setting": {
-      "Mode": "MoonWalk",
-      "YawSpeedMin": 25.0,
-      "YawSpeedMax": 38.0,
-      "PitchSpeedMin": 12.0,
-      "PitchSpeedMax": 27.0,
+      "Mode": "Normal",
       "Backup": 0.0,
-      "SpamClick": true,
+      "SpamClick": false,
       "IntaveHit": true,
       "ClickDelay": 200.0,
       "MoveFix": true,
-      "SilentMoveFix": false,
+      "SilentMoveFix": true,
       "SameY": false,
       "Breezly": false,
       "AutoJump": true,
       "Jump Delay": 8.0,
-      "NoSwing": false,
+      "NoSwing": true,
       "Predict": true,
       "Sprint": false,
+      "LegitSneak": false,
       "Tower": "None",
       "TowerMove": false,
-      "SneakDelay": 2000.0,
       "SilentMode": "Spoof",
-      "ESP": true,
       "Block Count": "Augustus"
     }
   },
@@ -214,31 +200,23 @@
     "Setting": {}
   },
   "ChestStealer": {
-    "Toggled": true,
+    "Toggled": false,
     "Setting": {
-      "ClickMode": "Interval",
-      "MinDelay": 0.0,
-      "MaxDelay": 0.0,
-      "MinInterval": 2.0,
-      "MaxInterval": 6.0,
-      "Delay": 100.0,
-      "Random Strength": 47.0,
-      "StartDelay": 255.0,
+      "ClickMode": "Normal",
       "Random": false,
-      "FailClicks": true,
+      "FailClicks": false,
       "FailChance": 4.0,
       "Intelligent": true,
       "AutoClose": true,
-      "CloseDelay": 391.0,
+      "CloseDelay": 227.0,
       "SpamClick": false
     }
   },
   "AutoArmor": {
-    "Toggled": true,
+    "Toggled": false,
     "Setting": {
       "Mode": "OpenInv",
       "StartDelay": 200.0,
-      "Delay": 90.0,
       "Hotbar": true,
       "GommeQSG": true,
       "NoMove": false,
@@ -247,21 +225,14 @@
     }
   },
   "InvCleaner": {
-    "Toggled": true,
+    "Toggled": false,
     "Setting": {
       "Mode": "OpenInv",
       "CleanMode": "Clean",
       "NoMove": true,
-      "ClickMode": "Interval",
-      "MinDelay": 0.0,
-      "MaxDelay": 282.0,
-      "MinInterval": 8.0,
-      "MaxInterval": 10.0,
-      "Delay": 182.0,
-      "StartDelay": 364.0,
-      "Random Strength": 55.0,
-      "FailClicks": true,
-      "FailChance": 4.0,
+      "ClickMode": "Normal",
+      "FailClicks": false,
+      "FailChance": 3.0,
       "Sort": true
     }
   },
